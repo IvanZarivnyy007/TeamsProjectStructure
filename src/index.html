@@ -8,34 +8,29 @@
     <link rel="stylesheet" href="./css/my.css" />
   </head>
   <body>
-    <div class="modal">
+    <div id="modal" class="modal is-open">
       <div class="modal-content">
-        <div>
-          <button class="modal-close-btn" type="button">
-            <img src="./img/Icon.png" alt="" />
-          </button>
-        </div>
-        <a href=""
-          ><img class="modal-img" src="./img/Rectangle 13.jpg" alt=""
-        /></a>
-        <h3>HELLO BEAUTIFUL</h3>
-        <p>Ann Napolitano</p>
+        <button class="close" type="button"></button>
+
+        <img class="modal-img" src="./img/Rectangle 13.jpg" alt="Book Cover" />
+        <h2>HELLO BEAUTIFUL</h2>
+        <p>Автор: <span id="author">Ann Napolitano</span></p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sequi
-          debitis explicabo in id nemo adipisci harum dicta praesentium ea natus
-          earum, omnis nobis tempore? Ut, voluptas expedita. Enim, vel?
+          Короткий опис:
+          <span id="description"
+            >In a homage to Louisa May Alcott’s “Little Women,” a young man’s
+            dark past resurfaces as he gets to the know the family of his
+            college sweetheart.</span
+          >
         </p>
 
-        <ul class="modal-link">
-          <li class="modal-amazon">
-            <a href="" target="_blank"
-              ><img src="/src/img/image 1.png" alt=""
-            /></a>
-          </li>
-          <li class="modal-book"><img src="/src/img/image 2.png" alt="" /></li>
+        <ul class="link-to-sellers" id="marketplaces">
+          <li><a href="#"></a><img src="./img/image 1.png" alt="" /></li>
+          <li><a href="#"></a><img src="./img/image 2.png" alt="" /></li>
+          <!-- Додаткові посилання -->
         </ul>
+        <button class="btn" id="add-to-cart">Додати до Shopping list</button>
       </div>
-      <button class="modal-btn-add" type="button">ADD TO SHOPPING LIST</button>
     </div>
     <script type="module" src="./main.js"></script>
   </body>
