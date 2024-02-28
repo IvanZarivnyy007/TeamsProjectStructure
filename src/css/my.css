@@ -1,0 +1,51 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.modal {
+  border: 2px solid black;
+  border-radius: 18px;
+  width: 335px;
+  height: 762px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-close-btn {
+  border: none;
+  background-color: transparent;
+  margin-left: 275px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.modal-content {
+  width: 287px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.modal-img {
+  width: 287px;
+  height: 408px;
+}
+
+.modal-link {
+  display: flex;
+}
+
+.modal-link .modal-amazon .modal-book {
+  display: flex;
+}
+
+.modal-btn-add {
+  border-radius: 5px;
+  border: 2px solid violet;
+  border-radius: 40px;
+  padding: 14px 28px;
+  height: 46px;
+}
