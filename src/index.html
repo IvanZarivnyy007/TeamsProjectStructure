@@ -5,33 +5,40 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/my.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/new.css" />
   </head>
   <body>
-    <div id="modal" class="modal is-open">
-      <div class="modal-content">
-        <button class="close" type="button"></button>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-svg" width="24" height="24">
+            <use href="./img/symbol-defs.svg#icon-Icon"></use>
+          </svg>
+        </button>
 
-        <img class="modal-img" src="./img/Rectangle 13.jpg" alt="Book Cover" />
-        <h2>HELLO BEAUTIFUL</h2>
-        <p>Автор: <span id="author">Ann Napolitano</span></p>
-        <p>
-          Короткий опис:
-          <span id="description"
-            >In a homage to Louisa May Alcott’s “Little Women,” a young man’s
-            dark past resurfaces as he gets to the know the family of his
-            college sweetheart.</span
-          >
-        </p>
-
-        <ul class="link-to-sellers" id="marketplaces">
-          <li><a href="#"></a><img src="./img/image 1.png" alt="" /></li>
-          <li><a href="#"></a><img src="./img/image 2.png" alt="" /></li>
-          <!-- Додаткові посилання -->
-        </ul>
-        <button class="btn" id="add-to-cart">Додати до Shopping list</button>
+        <div class="modal-content-wrap">
+          <img src="./img/Rectangle 13.jpg" alt="" />
+          <div class="modal-text-wrap">
+            <h3>HELLO BEAUTIFUL</h3>
+            <p>Ann Napolitano</p>
+            <p>
+              In a homage to Louisa May Alcott’s “Little Women,” a young man’s
+              dark past resurfaces as he gets to the know the family of his
+              college sweetheart.
+            </p>
+          </div>
+        </div>
+        <button class="modal-button" type="button"></button>
       </div>
     </div>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>

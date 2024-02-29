@@ -14,7 +14,11 @@ img {
   max-width: 100%;
 }
 
-.modal {
+body {
+  font-family: 'DM sans', sans-serif;
+}
+
+.beckdrop {
   /* display: none; */
   position: fixed;
   z-index: 1;
@@ -26,7 +30,15 @@ img {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.modal-content {
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+}
+
+.modal {
+  position: relative;
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
@@ -36,14 +48,23 @@ img {
   border: 2px solid black;
 }
 
+.modal-content {
+  margin-top: 20px;
+}
+
+.modal-text {
+}
+
 .close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
   width: 24px;
   height: 24px;
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 5px;
 }
 
 .close:hover,
@@ -73,10 +94,16 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .modal {
+    display: block;
+  }
+
   .modal-content {
     display: flex;
     max-width: 580px;
-    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 40px;
   }
 
   .modal-img {
